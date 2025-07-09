@@ -185,7 +185,7 @@ namespace Raytracer
             cube.SetTransform(transform);
             group.AddChild(cube);
 
-            //scene.objects.Add(group);
+            scene.objects.Add(group);
 
             //transform = Matrix.GetTranslation(0, 0, -8);
             //transform = transform.Multiply(Matrix.GetScaling(4, 4, 4));
@@ -295,24 +295,24 @@ namespace Raytracer
             //sphere = new Sphere(mat, transform);
             //scene.AddObject(sphere);
 
-            Matrix patTransform = Matrix.GetScaling(4, 4, 4);//.Multiply(Matrix.GetRotateX(0));
-            Pattern pattern = new Checker2DPattern(new RayColour(0.3, 0.8, 0.2), new RayColour(0.2, 0.4, 0.9), patTransform);
-            transform = Matrix.GetTranslation(0, -8, 0);
-            mat = new Material(new RayColour(0.2, 0.5, 0.5), 0.1, 1.0, 1, 400, 0, 0, 1, pattern);
-            Plane plane = new Plane();
-            plane.SetMaterial(mat);
-            plane.SetTransform(transform);
+            //Matrix patTransform = Matrix.GetScaling(4, 4, 4);//.Multiply(Matrix.GetRotateX(0));
+            //Pattern pattern = new Checker2DPattern(new RayColour(0.3, 0.8, 0.2), new RayColour(0.2, 0.4, 0.9), patTransform);
+            //transform = Matrix.GetTranslation(0, -8, 0);
+            //mat = new Material(new RayColour(0.2, 0.5, 0.5), 0.1, 1.0, 1, 400, 0, 0, 1, pattern);
+            //Plane plane = new Plane();
+            //plane.SetMaterial(mat);
+            //plane.SetTransform(transform);
 
             //scene.objects.Add(plane);
 
-            Group obj = OBJParser.ParsOBJFile("terrain.obj");
-            mat = new Material(new RayColour(0.2, 0.1, 0.8), 0.2, 1.0, 1, 1000, 0.9, 0, 1);
-            obj.SetMaterial(mat);
-            transform = Matrix.GetScaling(0.1, 0.1, 0.1);
-            obj.SetTransform(transform);
-            obj = obj.Subdivide(3);
+            //Group obj = OBJParser.ParsOBJFile("terrain.obj");
+            //mat = new Material(new RayColour(0.2, 0.1, 0.8), 0.2, 1.0, 1, 1000, 0.9, 0, 1);
+            //obj.SetMaterial(mat);
+            //transform = Matrix.GetScaling(0.1, 0.1, 0.1);
+            //obj.SetTransform(transform);
+            //obj = obj.Subdivide(3);
 
-            scene.objects.Add(obj);
+            //scene.objects.Add(obj);
         }
 
         public new void RunPlotter()
