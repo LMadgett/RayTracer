@@ -5,3 +5,4 @@
 - multithreaded for performance
 - selection of inbuilt shapes
 - depth of field, transparency, and reflection all customisable on the materials
+- uses raylib for plotting 
